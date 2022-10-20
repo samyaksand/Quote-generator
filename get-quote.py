@@ -1,7 +1,9 @@
-import requests, random
-from bs4 import BeautifulSoup
+
 #Created a random quote generator, and send it using email.
 # Web scraping implemented using BeautifulSoup
+
+import requests, random
+from bs4 import BeautifulSoup
 
 import smtplib
 def random_quote(url):
@@ -20,9 +22,7 @@ def send_email(mail):
     
     sender = input("Enter Sender's Email ID:")
     passwd = input("Enter Sender's Password:") 
-    
-    #using apps password is recommended. 
-    #or you'll have to enable less secure apps in your google account.
+   
     
     reciever = input("Enter Reciever's Email ID:")
     
